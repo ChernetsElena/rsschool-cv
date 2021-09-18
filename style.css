@@ -1,0 +1,162 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+p {
+  line-height: 1.5;
+}
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.information-wrapper {
+  display: flex;
+}
+
+.contacts-wrapper {
+  background-color: rgb(14, 122, 185);
+  width: 340px;
+  padding: 20px 35px 0 35px;
+  color: #fff;
+}
+
+.section-contacts {
+  width: 270px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.title {
+  margin-bottom: 0px;
+  letter-spacing: 0.5px;
+}
+
+.line {
+  background-color: #fff;
+  border: 0.1px solid #fff;
+}
+
+.contacts-meaning {
+  text-align: right;
+}
+
+.contacts-item-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+.contacts-item-meaning {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+.skill-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 14px;
+  margin-right: 14px;
+}
+
+.skill-list {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.skill {
+  list-style-type: disc;
+}
+
+.language-list {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+ 
+.main-information {
+  background-color: rgb(255, 255, 255);
+  padding: 20px 40px 0 40px;
+  color:rgb(22, 2, 2)
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title-name {
+  margin: 0;
+}
+
+.subtitle {
+ margin-top: 10px;
+ margin-bottom: 0px;
+}
+
+.foto {
+  border-radius: 300px;
+  transform: scale(-1, 1); 
+  border:5px solid rgb(14, 122, 185);
+}
+
+.line-main {
+  background-color: rgb(22, 2, 2);
+  border: 0.1px solid rgb(22, 2, 2);
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(14, 122, 185);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 70px;
+  
+}
+
+.footer-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.javascript {
+  background-color: rgb(241, 241, 241);
+}
+
+.github {
+  width: 340px;
+  background-color: rgb(14, 122, 185);
+  text-align: center;
+  color:rgb(255, 255, 255);
+}
+
+.year {
+  margin: 10px 0;
+}
+
