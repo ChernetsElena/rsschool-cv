@@ -1,3 +1,3 @@
 # rsschool-cv
 
-https://chernetselena.github.io/rsschool-cv/cv
+https://chernetselena.github.io/rsschool-cv/
