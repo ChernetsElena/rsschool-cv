@@ -1,0 +1,142 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="information-wrapper">
+      <div class="contacts-wrapper">
+        <section class="section-contacts">
+          <h3 class="title">Contacts</h3>
+          <hr class="line">
+          <div class="contacts">
+            <div class="contacts-title">
+              <h5 class="contacts-item-title">Location:</h5>
+              <h5 class="contacts-item-title">Phone:</h5> 
+              <h5 class="contacts-item-title">Email:</h5> 
+              <h5 class="contacts-item-title">Telegram:</h5> 
+            </div>
+            <div class="contacts-meaning">
+              <h5 class="contacts-item-meaning">Saratov, Russia</h5> 
+              <h5 class="contacts-item-meaning">+79063090752</h5> 
+              <h5 class="contacts-item-meaning">chernets-elena@mail.ru</h5> 
+              <h5 class="contacts-item-meaning">@chernets-elena</h5> 
+            </div>
+          </div>
+        </section>
+        <section class="section-contacts">
+          <h3 class="title">Skills</h3>
+          <hr class="line">
+          <div class="skill-wrapper">
+            <ul class="skill-list">
+              <li class="skill">HTML5</li>
+              <li class="skill">CSS3</li>
+            </ul>
+            <ul class="skill-list">
+              <li class="skill">JavaScript</li>
+              <li class="skill">SQL</li>
+            </ul>
+          </div>
+        </section>
+        <section class="section-contacts">
+          <h3 class="title">Languages</h3>
+          <hr class="line">
+          <ul class="language-list">
+            <li>Russian (Native)</li>
+            <li>English (Pre-intermediate)</li>
+          </ul>
+        </section>
+      </div>
+      <div class="main-information">
+        <header class="header">
+          <div class="header-name">
+            <h1 class="title-name">Chernets Elena</h1>
+            <h2 class="subtitle">Junior Frontend Developer</h2>
+          </div>
+          <img class="foto" width=250 height=250 src="./foto.jpg" alt="foto">
+        </header>
+        <section>
+          <h3 class="title">About myself</h3>
+          <hr class="line-main">
+          <p>I have always enjoyed programming and I would like 
+             my code to be useful to me and other people. I am attracted 
+             to web development because the products of this direction 
+             are used by a huge number of people. Another reason for my 
+             interest in web development is that it allows me to create 
+             anything from a single page site to a mini-game. I want to become 
+             a good front-end developer and hope that my studies at RSSchool 
+             will give me new knowledge and improve my skills.</p>
+        </section>
+        <section>
+          <h3 class="title">Education</h3>
+          <hr class="line-main">
+          <p>
+              Saratov State University, department of Nano- and Biomedical 
+              Technologies, Bachelor’s Degree in Biotechnical systems and 
+              technologies (2016-2020)
+          </p>
+          <p>
+              Saratov State University, department of Nano- and Biomedical 
+              Technologies, Master’s Degree in Biotechnical systems and 
+              technologies (2020-2022)
+          </p>
+        </section>
+        <section>
+          <h3 class="title">Courses</h3>
+          <hr class="line-main">
+          <p>
+            Training internship in developing a client-server application 
+            using JavaScript, Golang, PostgreSQL (the Scientific and Production 
+            Association RainbowSoft) 
+            <a class="link" href="https://github.com/ChernetsElena/RBSTaskMaster">
+              https://github.com/ChernetsElena/RBSTaskMaster
+            </a>
+          </p>
+          <p>
+            Interactive SQL Trainer (the educational platform 
+            <a class="link" href="https://stepik.org/course/63054/promo">
+              Stepik.org
+            </a>
+          </p>
+        </section>
+        <section>
+          <h3 class="title">Code example</h3>
+          <hr class="line-main">
+          <pre class="javascript">
+            <code>
+              function explode(s) {
+                  let numbers = '0123456789'
+                  let result = ''
+                  for (let char of s) {
+                      for (let i = 0; i &lt; numbers.indexOf(char); i++) {
+                          result += char
+                      }
+                  }
+                  return result
+              }
+            </code>
+          </pre>
+        </section>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="github">
+        <a href="https://github.com/ChernetsElena/" class="footer-link">My Github</a>
+        <h4 class="year">2021</h4>
+      </div>
+      <div>
+        <a href="https://rs.school/js/">
+          <img width=120 src="./rs_school_js.svg" alt="Rsschool logo">
+        </a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
