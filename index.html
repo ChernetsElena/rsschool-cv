@@ -6,32 +6,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   <link rel="stylesheet" href="./style.css">
   <title>Document</title>
 </head>
-<body>
+<body class="body">
   <div class="wrapper">
     <div class="information-wrapper">
       <div class="contacts-wrapper">
-        <section class="section-contacts">
+        <section class="section-contacts page-section-5">
           <h3 class="title">Contacts</h3>
           <hr class="line">
           <div class="contacts">
-            <div class="contacts-title">
-              <h5 class="contacts-item-title">Location:</h5>
-              <h5 class="contacts-item-title">Phone:</h5> 
-              <h5 class="contacts-item-title">Email:</h5> 
-              <h5 class="contacts-item-title">Telegram:</h5> 
-            </div>
-            <div class="contacts-meaning">
-              <h5 class="contacts-item-meaning">Saratov, Russia</h5> 
-              <h5 class="contacts-item-meaning">+79063090752</h5> 
-              <h5 class="contacts-item-meaning">chernets-elena@mail.ru</h5> 
-              <h5 class="contacts-item-meaning">@chernets-elena</h5> 
-            </div>
+            <ul class="contacts-title">
+              <li class="contacts-item-title">Location:</li>
+              <li class="contacts-item-title">Phone:</li> 
+              <li class="contacts-item-title">Email:</li> 
+              <li class="contacts-item-title">Telegram:</li> 
+            </ul>
+            <ul class="contacts-meaning">
+              <li class="contacts-item-meaning">Saratov, Russia</li> 
+              <li class="contacts-item-meaning">+79063090752</li> 
+              <li class="contacts-item-meaning">chernets-elena@mail.ru</li> 
+              <li class="contacts-item-meaning">@chernets-elena</li> 
+            </ul>
           </div>
         </section>
-        <section class="section-contacts">
+        <section class="section-contacts page-section-6">
           <h3 class="title">Skills</h3>
           <hr class="line">
           <div class="skill-wrapper">
@@ -45,7 +48,7 @@
             </ul>
           </div>
         </section>
-        <section class="section-contacts">
+        <section class="section-contacts page-section-7">
           <h3 class="title">Languages</h3>
           <hr class="line">
           <ul class="language-list">
@@ -54,15 +57,43 @@
           </ul>
         </section>
       </div>
-      <div class="main-information">
+      <main class="main-information">
         <header class="header">
           <div class="header-name">
             <h1 class="title-name">Chernets Elena</h1>
             <h2 class="subtitle">Junior Frontend Developer</h2>
           </div>
           <img class="foto" width=250 height=250 src="./foto.jpg" alt="foto">
+          <div class="burger">
+            <span></span>
+          </div>
+          <nav class="menu">
+            <ul class="menu-list">
+              <li>
+                <a data-goto=".page-section-1" href="#" class="menu-link">About myself</a>
+              </li>
+              <li>
+                <a data-goto=".page-section-2" href="#" class="menu-link">Education</a>
+              </li>
+              <li>
+                <a data-goto=".page-section-3" href="#" class="menu-link">Courses</a>
+              </li>
+              <li>
+                <a data-goto=".page-section-4" href="#" class="menu-link">Code example</a>
+              </li>
+              <li>
+                <a data-goto=".page-section-5" href="#" class="menu-link">Contacts</a>
+              </li>
+              <li>
+                <a data-goto=".page-section-6" href="#" class="menu-link">Skills</a>
+              </li>
+              <li>
+                <a data-goto=".page-section-7" href="#" class="menu-link">Languages</a>
+              </li>
+            </ul>
+          </nav>
         </header>
-        <section>
+        <section class="page-section page-section-1">
           <h3 class="title">About myself</h3>
           <hr class="line-main">
           <p>I have always enjoyed programming and I would like 
@@ -74,7 +105,7 @@
              a good front-end developer and hope that my studies at RSSchool 
              will give me new knowledge and improve my skills.</p>
         </section>
-        <section>
+        <section class="page-section page-section-2">
           <h3 class="title">Education</h3>
           <hr class="line-main">
           <p>
@@ -88,7 +119,7 @@
               technologies (2020-2022)
           </p>
         </section>
-        <section>
+        <section class="page-section page-section-3">
           <h3 class="title">Courses</h3>
           <hr class="line-main">
           <p>
@@ -106,37 +137,40 @@
             </a>
           </p>
         </section>
-        <section>
+        <section class="page-section page-section-4">
           <h3 class="title">Code example</h3>
           <hr class="line-main">
           <pre class="javascript">
-            <code>
-              function explode(s) {
-                  let numbers = '0123456789'
-                  let result = ''
-                  for (let char of s) {
-                      for (let i = 0; i &lt; numbers.indexOf(char); i++) {
-                          result += char
-                      }
-                  }
-                  return result
+            <code class="code">
+  function explode(s) {
+      let numbers = '0123456789'
+      let result = ''
+          for (let char of s) {
+              for (let i = 0; i &lt; numbers.indexOf(char); i++) {
+                  result += char
               }
+          }
+      return result
+  }
             </code>
           </pre>
         </section>
-      </div>
+      </main>
     </div>
     <footer class="footer">
-      <div class="github">
-        <a href="https://github.com/ChernetsElena/" class="footer-link">My Github</a>
-        <h4 class="year">2021</h4>
-      </div>
-      <div>
-        <a href="https://rs.school/js/">
-          <img width=120 src="./rs_school_js.svg" alt="Rsschool logo">
-        </a>
+      <div class="container">
+        <div class="github">
+          <a href="https://github.com/ChernetsElena/" class="footer-link">My Github</a>
+          <h4 class="year">2021</h4>
+        </div>
+        <div class="rsschool-logo-container">
+          <a class="rsschool-logo" href="https://rs.school/js/">
+            <img width=120 src="./rs_school_js.svg" alt="Rsschool logo">
+          </a>
+        </div>
       </div>
     </footer>
   </div>
+  <script src='script.js'></script>
 </body>
 </html>
